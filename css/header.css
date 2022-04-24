@@ -1,0 +1,226 @@
+/* gebral styles */
+.main-dark {
+    color: #1d2e4c
+}
+/* gebral styles */
+
+/* MOBILE MENU */
+.mobil-menu {
+    position: fixed;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    opacity:0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events:none
+}
+
+.mobil-menu.active {
+    opacity:1;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events:auto;
+    background: rgba(255,255,255, 0.01)
+}
+
+.menu-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+           align-items: center;
+    width: 100%;    
+    z-index: 5    
+}
+
+.mobil-menu .heading-box,
+.mobil-menu ul {
+    z-index: 5
+}
+
+.mobil-menu .heading-box {
+    width:100%;
+    text-align: center;
+    text-transform: capitalize
+}
+
+.mobil-menu .heading-box h6 {
+    color: #037b03;
+    font-size: 2rem;
+    margin-bottom: 0
+}
+
+.mobil-menu .heading-box h2 {
+    color: #960d0d;
+    font-size: 4rem;
+    margin-bottom: 5rem
+}
+
+.mobil-menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center
+}
+
+.mobil-menu ul li {
+    margin-bottom: 2rem
+}
+
+.mobil-menu ul a { 
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 2px 0 3px 0;
+    line-height: normal;
+    position: relative;
+    text-transform: uppercase
+}
+.mobil-menu ul a:hover { 
+    text-decoration: none
+}
+/* MOBILE MENU */
+
+/* HEADER */
+header .upper-bar i {
+    color: #a52a2a
+}
+
+header .upper-bar {
+    padding: 1rem 1rem .5rem
+}
+
+@media (max-width: 450px) {
+    
+    header .upper-bar {
+        font-size: .8em
+    }
+}
+
+@media (max-width: 360px) {
+    
+    header .upper-bar {
+        font-size: .8em
+    }
+}
+
+header .upper-bar i {
+    margin-right: 1rem;
+    font-size: 1rem
+}
+
+@media (max-width: 450px) {
+    
+    header .upper-bar i {
+        font-size: 1em
+    }
+}
+
+header .upper-bar i.fa-whatsapp {
+    font-size: 1.3rem
+}
+
+@media (max-width: 450px) {
+    
+    header .upper-bar i.fa-whatsapp {
+        margin-right: .5rem;
+        font-size: 1.5em
+    }
+}
+
+header .upper-bar a { color: #fff }
+
+header .navbar { position:static }
+
+header .navbar.alt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: 0 2px 10px #27344059;
+            box-shadow: 0 2px 10px #27344059;
+    z-index: 10
+}
+
+header .navbar-brand span {
+    text-transform: uppercase;
+    font-size: 1.8rem
+}
+
+@media (max-width: 450px) {
+    
+    header .navbar-brand span {
+        font-size: 1.3em
+    }
+}
+
+header .upper-bar i.fa-whatsapp,
+header .navbar-brand span:last-of-type {
+    color: #960d0d
+}
+
+header .navbar-brand span:first-of-type{
+    color: #037b03
+}
+
+header .navbar .nav-link{
+    text-transform:capitalize;
+    -webkit-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px
+}
+
+@media (max-width: 991px) {
+    
+    header .nav-pills {
+        display: none
+    }
+}
+
+.navbar .nav-button {
+    border: 2px solid #2e2f30;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10
+}
+
+.navbar.alt .nav-button {
+    border: 2px solid #000;
+    color: #000
+}
+
+.nav-button i {
+    padding: 6px 11px;
+    font-size: 1.2em
+}
+
+@media (min-width: 992px) {
+    
+    header .nav-button {
+        display: none
+    }
+}
+/* HEADER */
